@@ -1,142 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Filip's Retro Webpage</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Filip's Retro Page</title>
   <style>
     body {
-      background: #000033; /* simple retro dark blue background */
-      color: #39ff14;
-      font-family: 'Comic Sans MS', cursive, sans-serif;
+      background: linear-gradient(135deg, #0d1b2a, #1b263b);
+      color: white;
+      font-family: "Courier New", Courier, monospace;
       margin: 0;
       padding: 0;
-      line-height: 1.6;
       text-align: center;
     }
     header {
-      background: #000;
-      padding: 1rem;
-      border-bottom: 5px double #ff00ff;
+      background: #1e3d59;
+      padding: 20px;
+      border-bottom: 3px solid #e63946;
     }
     header h1 {
       margin: 0;
-      font-size: 3rem;
-      color: #00ffff;
-      text-shadow: 2px 2px #ff00ff;
+      font-size: 3em;
+      color: #e0e1dd;
     }
     marquee {
-      background: #111;
-      color: #ffcc00;
-      padding: 0.5rem;
-      font-size: 1.2rem;
-      border-top: 3px solid #ff00ff;
-      border-bottom: 3px solid #00ffff;
+      color: #ffb703;
+      font-size: 1.2em;
     }
     section {
-      padding: 2rem;
-      max-width: 900px;
-      margin: auto;
+      padding: 20px;
+      margin: 20px;
+      background: rgba(255, 255, 255, 0.05);
+      border: 2px solid #8ecae6;
+      border-radius: 10px;
     }
     h2 {
-      color: #ff66cc;
-      text-shadow: 1px 1px #00ffff;
+      color: #ffb703;
+      text-shadow: 1px 1px #000;
     }
-    .vocab-list {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 1rem;
-    }
-    .vocab-item {
-      background: #111;
-      border: 3px dotted #ff00ff;
-      padding: 1rem;
-      border-radius: 12px;
-      color: #00ffcc;
-    }
-    img, iframe {
+    img {
+      max-width: 400px;
+      margin: 10px auto;
       display: block;
-      margin: 1.5rem auto;
-      max-width: 90%;
-      border: 5px ridge #ff00ff;
-      border-radius: 8px;
+      border: 3px solid #219ebc;
+      border-radius: 10px;
+    }
+    iframe {
+      margin-top: 20px;
+      border: 3px solid #219ebc;
+      border-radius: 10px;
     }
     button {
-      background: #ff00ff;
+      background: #ffb703;
+      color: black;
       border: none;
-      color: white;
       padding: 10px 20px;
-      font-size: 1rem;
-      cursor: pointer;
-      margin: 1rem;
+      margin: 15px;
+      font-size: 1em;
       border-radius: 8px;
+      cursor: pointer;
     }
     button:hover {
-      background: #00ffff;
-      color: black;
+      background: #fb8500;
+      color: white;
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>Filip's 90s Retro Page</h1>
+    <h1 onclick="alert('Welcome to Filip\'s Retro Site!')">Filip</h1>
+    <marquee behavior="scroll" direction="left">Welcome to my website! 🚀</marquee>
   </header>
 
-  <marquee behavior="scroll" direction="left">Welcome to my totally rad website! 🚀✨</marquee>
-
   <section>
-    <h2>My Goal</h2>
-    <p>After high school, I want to <strong>study engineering</strong>. I’m interested in how things work, from computing devices to the internet that connects the world.</p>
+    <h2>My Future</h2>
+    <p>After high school, I want to <strong>study engineering</strong>. I enjoy solving problems, building things, and using technology to make the world better.</p>
   </section>
 
   <section>
     <h2>Unit 1 & 2 Vocabulary</h2>
-    <div class="vocab-list">
-      <div class="vocab-item"><strong>Bit & Byte:</strong> A bit is the smallest unit of data (0 or 1). A byte is 8 bits.</div>
-      <div class="vocab-item"><strong>Roundoff:</strong> Small errors that happen when approximating real numbers with limited bits.</div>
-      <div class="vocab-item"><strong>Analog Data:</strong> Continuous data like sound waves, unlike digital 0s and 1s.</div>
-      <div class="vocab-item"><strong>Lossless vs. Lossy:</strong> Lossless keeps all data when compressed, lossy removes some to save space.</div>
-      <div class="vocab-item"><strong>Metadata:</strong> Data about data (like a photo’s resolution or date taken).</div>
-      <div class="vocab-item"><strong>Computing Device:</strong> A machine that runs programs (phones, laptops, servers).</div>
-      <div class="vocab-item"><strong>Computer Network:</strong> A group of connected computers that share resources.
-      </div>
-      <div class="vocab-item"><strong>Path:</strong> The route data takes across a network.</div>
-      <div class="vocab-item"><strong>Protocol:</strong> Rules that computers follow to communicate.
-      </div>
-      <div class="vocab-item"><strong>Fault Tolerant:</strong> Systems designed to keep working even when parts fail.</div>
-      <div class="vocab-item"><strong>Scalability:</strong> A system’s ability to grow without breaking.
-      </div>
-      <div class="vocab-item"><strong>Bandwidth:</strong> How much data can be sent over a network in a given time.
-      </div>
-      <div class="vocab-item"><strong>URL:</strong> The web address of a page.
-      </div>
-      <div class="vocab-item"><strong>Routers:</strong> Devices that direct data packets across networks.
-      </div>
-      <div class="vocab-item"><strong>Packets:</strong> Small chunks of data sent across the internet.
-      </div>
-      <div class="vocab-item"><strong>IP:</strong> An address that identifies a device on a network.
-      </div>
-      <div class="vocab-item"><strong>Physical Network:</strong> The actual cables, satellites, and wires that connect devices.
-      </div>
-      <div class="vocab-item"><strong>HTTP:</strong> A protocol for transferring web pages.
-      </div>
-      <div class="vocab-item"><strong>WWW:</strong> The World Wide Web – websites and content built on the internet.
-      </div>
-      <div class="vocab-item"><strong>DNS:</strong> The “phonebook” of the internet that translates names (like google.com) into IP addresses.
-      </div>
-      <div class="vocab-item"><strong>TCP & UDP:</strong> Communication protocols. TCP checks all packets arrive; UDP is faster but less reliable.</div>
-    </div>
+    <p><strong>Bit & Byte:</strong> The smallest units of digital data storage. 8 bits = 1 byte.</p>
+    <p><strong>Roundoff:</strong> Small errors that occur when representing numbers digitally.</p>
+    <p><strong>Analog Data:</strong> Continuous data like sound waves, compared to digital data.</p>
+    <p><strong>Lossless vs. Lossy:</strong> Types of data compression; lossless keeps all data, lossy removes some.</p>
+    <p><strong>Metadata:</strong> Data about data, like image size or time created.</p>
+    <p><strong>Computing Device & Computer Network:</strong> Devices and systems that connect and share information.</p>
+    <p><strong>Path, Protocol, Fault Tolerant, Scalability:</strong> Terms describing how networks handle data, errors, and growth.</p>
+    <p><strong>Bandwidth, URL, Routers, Packets, IP:</strong> All about how information moves through the internet.</p>
+    <p><strong>Physical Network, HTTP, WWW, DNS, TCP, UDP:</strong> Infrastructure and rules that allow the internet to function.</p>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/3/3a/Data_center_interior.jpg" alt="Server Rack" />
+    <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Packet-switched_network.svg" alt="Packet Switching Diagram" />
   </section>
 
   <section>
-    <h2>Pictures</h2>
-    <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Packet-switched_network.svg" alt="Diagram of packets and routers">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/3/3a/Server_rack_with_telecommunications_equipment.jpg" alt="Server rack physical network">
+    <h2>Cryptocurrency</h2>
+    <p>Bitcoin and other cryptocurrencies are digital currencies that use blockchain technology to record transactions securely and transparently. Instead of banks, they rely on decentralized networks of computers that validate and confirm exchanges. Cryptocurrencies are important today because they allow fast, global transactions and can’t easily be controlled by governments or single organizations. They also raise questions about privacy, regulation, and the future of money in a digital world.</p>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/4/46/Bitcoin.svg" alt="Bitcoin Logo" />
   </section>
 
   <section>
     <h2>How the Internet Works</h2>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/x3c1ih2NJEg" title="How the Internet Works" frameborder="0" allowfullscreen></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/7_LPdttKXPc" title="How the Internet Works" frameborder="0" allowfullscreen></iframe>
   </section>
+
+  <button onclick="document.body.style.background = (document.body.style.background.includes('linear-gradient') ? '#000' : 'linear-gradient(135deg, #0d1b2a, #1b263b)');">Toggle Retro Mode</button>
 </body>
 </html>
